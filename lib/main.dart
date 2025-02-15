@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:supabase_first/app_urls.dart';
 import 'package:supabase_first/homepage.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Supabase.initialize(
-    url: "",
-    anonKey: "",
+    url: AppUrls.supabsseUrl,
+    anonKey: AppUrls.supabseKey,
   );
 
   runApp(const MyApp());
